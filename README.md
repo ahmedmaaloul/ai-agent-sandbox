@@ -16,6 +16,41 @@ A modular Python framework to build, test, and extend intelligent agents with me
 - OpenAI API key (or your own LLM)
 - Optionally: DuckDuckGo Search API for local search
 
-Install dependencies:
+### Install dependencies:
+
 ```bash
 pip install -r requirements.txt
+````
+
+### Set up your environment:
+
+```bash
+cp .env.example .env
+```
+
+## 🔧 Folder Structure
+
+| Folder        | Description                     |
+| ------------- | ------------------------------- |
+| `agents/`     | Core agent logic                |
+| `tools/`      | Modular tools for agents        |
+| `strategies/` | Decision engines (e.g. LLMs)    |
+| `memory/`     | Memory modules for agents       |
+| `examples/`   | Agent demos                     |
+| `cli.py`      | Interactive shell (coming soon) |
+
+## 🧪 Try It
+
+```bash
+python examples/web_search_agent.py
+```
+
+## 📚 Coming Soon
+
+* Streamlit visual dashboard
+* Multi-agent support
+* More tools: file writer, summarizer, calculator, etc.
+
+## 🛠️ License
+
+MIT
