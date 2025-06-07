@@ -56,8 +56,13 @@ class LLMStrategy:
             system_instruction=system_prompt,
             temperature=0.2),
         )
-
+        # ---------- Clean & parse response ---------- #
         raw = result.text.strip()
+
+        # ✅ Handle ```json code block formatting
+        if raw.startswith("```"):
+            raw = raw.lstrip("`json").strip("`").strip()
+
         try:
             return json.loads(raw)
         except json.JSONDecodeError as e:
