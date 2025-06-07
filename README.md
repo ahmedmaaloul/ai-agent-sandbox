@@ -41,15 +41,21 @@ cp .env.example .env
 
 ## 🧪 Try It
 
+### Web Search Agent 
 ```bash
 python examples/web_search_agent.py
+```
+
+### File Writer Agent 
+```bash
+python examples/file_writer_agent.py
 ```
 
 ## 📚 Coming Soon
 
 * Streamlit visual dashboard
 * Multi-agent support
-* More tools: file writer, summarizer, calculator, etc.
+* More tools: summarizer, calculator, etc.
 
 ## 🛠️ License
 
